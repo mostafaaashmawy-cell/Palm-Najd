@@ -310,27 +310,23 @@ button, input, select {
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  background: #FFFFFF;
-  padding: 8px 20px;
-  border-radius: 6px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
   margin-bottom: 26px;
 }
 
 .hero-brand-logo {
-  height: 36px;
+  height: 44px;
   width: auto;
   display: block;
 }
 
 .hero-brand-sub {
   font-size: 0.72rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--crimson);
-  border-left: 1px solid rgba(0, 0, 0, 0.12);
-  padding-left: 14px;
-  font-weight: 700;
+  color: var(--gold-light);
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+  padding-left: 16px;
+  font-weight: 600;
 }
 
 /* Left Hero Content */
@@ -1056,21 +1052,11 @@ button, input, select {
   margin: 0 auto;
 }
 
-.footer-brand-wrap {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #FFFFFF;
-  padding: 10px 24px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
 .footer-logo {
-  height: 36px;
+  height: 44px;
   width: auto;
   display: block;
+  margin-bottom: 20px;
 }
 
 .footer-broker-line {
