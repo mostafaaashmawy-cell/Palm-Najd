@@ -151,14 +151,14 @@ function initFormSubmissions() {
 }
 
 /* ============================================================
-   4. CONVERSION TRACKING
+   4. CONVERSION TRACKING (Form Submissions)
    ============================================================ */
 function triggerConversions() {
   if (typeof gtag_report_conversion === 'function') {
     gtag_report_conversion();
   } else if (typeof gtag === 'function') {
     gtag('event', 'conversion', {
-      'send_to': 'AW-299139259/IttmCOi8ieIcELuB0o4B',
+      'send_to': 'AW-299139259/OsrUCJGerfYcELuB0o4B',
       'value': 1.0,
       'currency': 'EGP'
     });
@@ -204,20 +204,23 @@ function initProjectInquiryTriggers() {
 }
 
 /* ============================================================
-   6. WHATSAPP TRACKING & CONTEXT PRE-FILL
+   6. WHATSAPP TRACKING (All WhatsApp Clicks)
    ============================================================ */
 function initWhatsAppTracking() {
-  const waLinks = document.querySelectorAll('a[href*="wa.me"]');
-  waLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (typeof gtag === 'function') {
+  // Delegate listener to track ALL WhatsApp link clicks across the page
+  document.addEventListener('click', (e) => {
+    const waLink = e.target.closest('a[href*="wa.me"]');
+    if (waLink) {
+      if (typeof gtag_report_conversion === 'function') {
+        gtag_report_conversion();
+      } else if (typeof gtag === 'function') {
         gtag('event', 'conversion', {
-          'send_to': 'AW-299139259/IttmCOi8ieIcELuB0o4B',
+          'send_to': 'AW-299139259/OsrUCJGerfYcELuB0o4B',
           'value': 1.0,
           'currency': 'EGP'
         });
       }
-    });
+    }
   });
 }
 

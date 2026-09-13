@@ -34,26 +34,26 @@
     gtag('config', 'AW-299139259');
   </script>
 
-  <!-- Conversion Event Snippet -->
+  <!-- Event snippet for Palm Hills conversion page -->
   <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined' && url) {
-          window.location = url;
-        }
-      };
-      if (typeof gtag === 'function') {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-299139259/IttmCOi8ieIcELuB0o4B',
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+          'send_to': 'AW-299139259/OsrUCJGerfYcELuB0o4B',
           'value': 1.0,
           'currency': 'EGP',
           'event_callback': callback
-        });
-      } else {
-        callback();
-      }
-      return false;
+      });
+    } else {
+      callback();
     }
+    return false;
+  }
   </script>
 
   <!-- Stylesheet -->
