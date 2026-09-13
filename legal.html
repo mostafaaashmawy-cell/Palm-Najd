@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions | Privacy Policy — propertiesegy</title>
+  <meta name="author" content="propertiesegy" />
+  <meta name="description" content="Terms and Conditions and Privacy Policy for propertiesegy — Palm Hills Developments real estate consultancy landing page." />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-299139259"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-299139259');
+  </script>
+
+  <style>
+    :root {
+      --bg:          #FAF8F5;
+      --surface:     #FFFFFF;
+      --card:        #FFFFFF;
+      --crimson:     #9E1B21;
+      --crimson-dim: #7D151A;
+      --gold:        #C5A880;
+      --gold-dim:    #A3835B;
+      --border:      rgba(158, 27, 33, 0.15);
+      --border-subtle: rgba(0, 0, 0, 0.07);
+      --fg:          #141416;
+      --muted:       #4E4E52;
+      --max-w:       920px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.8;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* TOP BAR */
+    .top-bar {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250, 248, 245, 0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 16px 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+    .brand-wrap {
+      display: flex; align-items: center; gap: 14px;
+    }
+    .brand-logo { height: 38px; width: auto; }
+    .brand-badge {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--muted);
+      border-left: 1px solid var(--border);
+      padding-left: 14px;
+    }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .68rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--crimson); font-weight: 600;
+      transition: gap .25s ease, color .25s ease;
+    }
+    .back-link:hover { gap: 12px; color: var(--fg); }
+    .back-link svg { width: 16px; height: 16px; }
+
+    /* HERO STRIP */
+    .legal-hero {
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--bg) 100%);
+      padding: 80px 24px 50px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .legal-hero-eyebrow {
+      font-size: .68rem; letter-spacing: .35em; text-transform: uppercase;
+      color: var(--crimson); font-weight: 700;
+    }
+    .legal-hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 400; margin-top: 12px; line-height: 1.15;
+      color: var(--fg);
+    }
+    .legal-hero .updated {
+      margin-top: 14px; font-size: .78rem; color: var(--muted);
+    }
+    .crimson-line { width: 50px; height: 2px; background: var(--crimson); margin: 20px auto 0; }
+
+    /* TAB NAVIGATION */
+    .tab-nav {
+      display: flex; justify-content: center; gap: 0;
+      border-bottom: 1px solid var(--border-subtle);
+      background: var(--surface);
+      position: sticky; top: 70px; z-index: 50;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    }
+    .tab-btn {
+      padding: 18px 36px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .7rem; letter-spacing: .25em; text-transform: uppercase;
+      font-weight: 600; color: var(--muted); cursor: pointer;
+      background: transparent; border: none;
+      border-bottom: 3px solid transparent;
+      transition: color .25s, border-color .25s;
+    }
+    .tab-btn.active { color: var(--crimson); border-bottom-color: var(--crimson); }
+    .tab-btn:hover { color: var(--fg); }
+
+    /* CONTENT BODY */
+    .legal-body {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; animation: fadeIn .3s ease; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .legal-section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .legal-section:last-child { border-bottom: none; }
+
+    .section-num {
+      font-size: .65rem; letter-spacing: .35em; text-transform: uppercase;
+      color: var(--crimson); font-weight: 700; margin-bottom: 8px;
+    }
+    .legal-section h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.8rem; font-weight: 500;
+      color: var(--fg); margin-bottom: 16px;
+    }
+    .legal-section p, .legal-section ul {
+      color: var(--muted); font-size: .92rem; margin-bottom: 14px;
+    }
+    .legal-section ul { padding-left: 24px; }
+    .legal-section li { margin-bottom: 8px; }
+    .legal-section strong { color: var(--fg); font-weight: 600; }
+
+    .callout-box {
+      background: #FFFFFF;
+      border-left: 4px solid var(--crimson);
+      padding: 22px 24px;
+      margin: 24px 0;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+    }
+    .callout-box p { margin-bottom: 0; font-size: .9rem; color: #222; }
+
+    /* FOOTER */
+    footer {
+      background: #121518;
+      color: #9A9DA4;
+      padding: 45px 24px;
+      text-align: center;
+      font-size: .78rem;
+    }
+    footer a { color: #D4AF67; }
+    footer a:hover { text-decoration: underline; }
+    .footer-copy { margin-top: 10px; font-size: .72rem; color: #737780; }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <div class="brand-wrap">
+      <img src="assets/images/palm-hills-logo.svg" alt="Palm Hills Developments" class="brand-logo" />
+      <span class="brand-badge">By propertiesegy</span>
+    </div>
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      <span>Back to Overview</span>
+    </a>
+  </header>
+
+  <!-- HERO STRIP -->
+  <section class="legal-hero">
+    <p class="legal-hero-eyebrow">Legal Notice &amp; Compliance</p>
+    <h1>Privacy Policy &amp; Terms of Use</h1>
+    <p class="updated">Effective Date: August 2026 &bull; Published by propertiesegy</p>
+    <div class="crimson-line"></div>
+  </section>
+
+  <!-- TAB NAVIGATION -->
+  <nav class="tab-nav" aria-label="Legal Tabs">
+    <button class="tab-btn active" id="tab-btn-privacy" onclick="switchTab('privacy')">Privacy Policy</button>
+    <button class="tab-btn" id="tab-btn-terms" onclick="switchTab('terms')">Terms &amp; Conditions</button>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="legal-body">
+
+    <!-- TAB 1: PRIVACY POLICY -->
+    <div class="tab-panel active" id="panel-privacy">
+      
+      <div class="callout-box">
+        <p><strong>Direct Summary:</strong> propertiesegy is an independent real estate advisory firm. We respect your confidentiality. The personal information you submit (Name and Phone Number) is strictly used to provide property consultations, price sheets, and availability for Palm Hills projects (Badya, P/X, 97 Hills, and Hacienda Ras El Hekma). We never sell your personal data.</p>
+      </div>
+
+      <section class="legal-section">
+        <p class="section-num">Section 01</p>
+        <h2>1. Information We Collect</h2>
+        <p>When you interact with our landing page or submit an inquiry form, we collect minimal and strictly necessary information:</p>
+        <ul>
+          <li><strong>Identity &amp; Contact Data:</strong> Full Name and Telephone / Mobile Number with international country dialing code.</li>
+          <li><strong>Project Inquiries:</strong> Specific project interest (Badya, P/X, 97 Hills, or Hacienda Ras El Hekma) and unit preferences.</li>
+          <li><strong>Technical Metadata:</strong> Anonymized usage data such as device type, browser information, referral sources, and page interaction analytics to ensure seamless site performance.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <p class="section-num">Section 02</p>
+        <h2>2. How We Use Your Information</h2>
+        <p>Your data is processed under legitimate business interests to facilitate your luxury real estate inquiries:</p>
+        <ul>
+          <li>To contact you via phone call or WhatsApp message regarding requested project brochures, current price lists, and payment plan simulations.</li>
+          <li>To arrange personalized consultations, site visits, or unit reservation procedures with verified Palm Hills commercial channels.</li>
+          <li>To improve user experience and measure marketing efficacy through anonymized conversion tracking.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <p class="section-num">Section 03</p>
+        <h2>3. WhatsApp &amp; Electronic Communications</h2>
+        <p>By providing your phone number and submitting your interest, you expressly consent to receive real estate communications and updates from <strong>propertiesegy</strong> property advisors via WhatsApp or phone at the provided number. You may opt-out or request cessation of communications at any time simply by replying "STOP" or notifying our team via WhatsApp at <strong>+20 10 20958859</strong>.</p>
+      </section>
+
+      <section class="legal-section">
+        <p class="section-num">Section 04</p>
+        <h2>4. Data Storage &amp; Third-Party Services</h2>
+        <p>We implement industry-standard encryption and security protocols. For form transmission, we utilize secure SSL-encrypted endpoints via <strong>Web3Forms</strong>. We do not sell, rent, or lease your personal identification information to third parties.</p>
+      </section>
+
+      <section class="legal-section">
+        <p class="section-num">Section 05</p>
+        <h2>5. Your Rights &amp; Contact Information</h2>
+        <p>You retain the right to request access to the personal data we hold about you, request corrections, or request complete deletion of your records. For any inquiries regarding our privacy standards, please reach us directly at:</p>
+        <p><strong>propertiesegy &mdash; Real Estate Consultancy</strong><br>
+        Direct WhatsApp / Mobile: <a href="https://wa.me/201020958859" style="color: var(--crimson); font-weight: 600;">+20 10 20958859</a><br>
+        Cairo &bull; New Cairo &bull; 6th of October &bull; North Coast, Egypt</p>
+      </section>
+
+    </div>
+
+    <!-- TAB 2: TERMS & CONDITIONS -->
+    <div class="tab-panel" id="panel-terms">
+
+      <div class="callout-box">
+        <p><strong>Important Agency Notice:</strong> This landing page is operated by <strong>propertiesegy</strong>, an independent luxury real estate consultancy. It is not the official corporate website of Palm Hills Developments SAE. All trademarks, project names, and architectural concepts remain the intellectual property of their respective owners.</p>
+      </div>
+
+      <section class="legal-section">
+        <p class="section-num">Section 01</p>
+        <h2>1. Independent Brokerage Status</h2>
+        <p><strong>propertiesegy</strong> operates as an independent, certified property consultancy facilitating advisory, sales brokerage, and client assistance for premier Egyptian real estate developments. We act as an authorized intermediary presenting verified developer inventory.</p>
+      </section>
+
+      <section class="legal-section">
+        <p class="section-num">Section 02</p>
+        <h2>2. Pricing &amp; Availability Subject to Change</h2>
+        <p>All prices, payment terms (including down payment percentages, installment tenures, and promotional "Value By Years" offers), delivery timelines, and unit availability featured on this landing page are derived from developer fact sheets (August 2026 release) and are subject to immediate alteration, withdrawal, or revision by the master developer without prior notice.</p>
+        <p>Written proposals, formal price quotations, and final contracts issued upon reservation shall govern all property transactions.</p>
+      </section>
+
+      <section class="legal-section">
+        <p class="section-num">Section 03</p>
+        <h2>3. Visuals &amp; Architectural Renderings</h2>
+        <p>Photographs, architectural renderings, masterplans, and computer-generated visualizations shown across this website are for illustrative and artistic representation purposes only. Actual delivered units, landscaping, and finishings may vary in accordance with final developer engineering execution.</p>
+      </section>
+
+      <section class="legal-section">
+        <p class="section-num">Section 04</p>
+        <h2>4. Disclaimer of Liability</h2>
+        <p>propertiesegy strives to maintain accurate and up-to-date project information. However, propertiesegy makes no express or implied warranties regarding the completeness or timeliness of master developer schedules, construction milestones, or pricing data. Inquirers are encouraged to verify all contract specifications with our advisors prior to financial commitment.</p>
+      </section>
+
+      <section class="legal-section">
+        <p class="section-num">Section 05</p>
+        <h2>5. Governing Law</h2>
+        <p>These terms and conditions are governed by and construed in accordance with the laws of the Arab Republic of Egypt. Any legal proceedings arising from site usage shall fall under the jurisdiction of Egyptian courts.</p>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>This landing page is operated by <strong>propertiesegy</strong>, an independent real estate consultancy, and is not the official website of Palm Hills Developments. Prices and availability are subject to change.</p>
+    <p class="footer-copy">&copy; <span id="yearVal">2026</span> propertiesegy &mdash; Strategic Real Estate Partners. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function switchTab(tab) {
+      const privacyBtn = document.getElementById('tab-btn-privacy');
+      const termsBtn   = document.getElementById('tab-btn-terms');
+      const privacyPan = document.getElementById('panel-privacy');
+      const termsPan   = document.getElementById('panel-terms');
+
+      if (tab === 'privacy') {
+        privacyBtn.classList.add('active');
+        termsBtn.classList.remove('active');
+        privacyPan.classList.add('active');
+        termsPan.classList.remove('active');
+        window.history.replaceState(null, null, '#privacy');
+      } else {
+        termsBtn.classList.add('active');
+        privacyBtn.classList.remove('active');
+        termsPan.classList.add('active');
+        privacyPan.classList.remove('active');
+        window.history.replaceState(null, null, '#terms');
+      }
+    }
+
+    // Auto-select tab on URL hash load
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.toLowerCase();
+      if (hash.includes('terms')) {
+        switchTab('terms');
+      } else {
+        switchTab('privacy');
+      }
+      document.getElementById('yearVal').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
